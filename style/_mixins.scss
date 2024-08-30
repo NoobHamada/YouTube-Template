@@ -1,0 +1,14 @@
+@mixin centering {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin circle-hover {
+    border-radius: 100%;
+    background-color: #414141;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    -ms-border-radius: 100%;
+    -o-border-radius: 100%;
+}

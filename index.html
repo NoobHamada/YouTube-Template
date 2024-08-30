@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube Template</title>
+
+    <!-- <link rel="stylesheet" href="style/bootstrap.css"> -->
+    <link rel="stylesheet" href="style/main.css">
+    <link rel="stylesheet" href="style/main.scss">
+    <link rel="stylesheet" href="style/media_queries.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    
+    <script src="script/data.json" defer></script>
+    <script src="script/vue.js" defer></script>
+    <script src="script/jquery-3.7.0.min.js" defer></script>
+    <script src="script/humburger.js" defer></script>
+    <script src="script/request.js" defer></script>
+    <!-- <script src="script/bootstrap.min.js" defer></script> -->
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+
+    <!-- Small Message in The Console -->
+     <script> console.log("/////***** This is an unfinished beta version of a Youtube template, I haven't added most of the icons in that template due to the lack of similar icons on the bootstrap icons library (like finding an icon for the 'shorts' in the side navbar.) *****/////") </script>
+</head>
+
+<body>
+    <aside>
+        <li>Home</li>
+        <li>Shorts</li>
+        <li>Subscriptions</li>
+        <hr class="can-be-hidden" width="200px" style="margin-left: 10px;">
+        <li class="can-be-hidden">Your Channel</li>
+        <li class="can-be-hidden">History</li>
+        <li class="can-be-hidden">Your Videos</li>
+        <li class="can-be-hidden">Watch Later</li>
+        <li>You</li>
+    </aside>
+    <!-- <aside id="small-screen-aside">
+        <li>Home</li>
+        <li>Shorts</li>
+        <li>Subscriptions</li>
+        <hr width="200px" style="margin-left: 10px;">
+        <li>Your Channel</li>
+        <li>History</li>
+        <li>Your Videos</li>
+        <li>Watch Later</li>
+        <li>You</li>
+    </aside> -->
+
+    <div id="parent-nav">
+        <nav>
+            <div id="button-and-youtube">
+                <span id="button">
+                    <span id="hamburger"></span>
+                </span>
+                <h3><i class="bi bi-youtube"></i> YouTube</h3>
+            </div>
+            <div></div> <!-- <<== This Div Is For Separation-->
+            <div class="container">
+                <input id="searchBar" type="text" placeholder="Search">
+                <button><i class="bi bi-search"></i></button>
+                <button id="mic"><i class="bi bi-mic-fill"></i></button>
+            </div>
+            <div class="container">
+                <button class="right-side-button"><i class="bi bi-camera-video"></i></button>
+                <button class="right-side-button"><i class="bi bi-bell"></i></button>
+                <button class="right-side-button"><i class="bi bi-person-circle"></i></button>
+            </div>
+        </nav>
+
+        <nav id="categories">
+            <span>All</span>
+            <span>Music</span>
+            <span>Gaming</span>
+            <span>Cats</span>
+        </nav>
+    </div>
+
+    <div id="videos-container"></div>
+</body>
+
+</html>
